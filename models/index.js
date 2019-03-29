@@ -3,8 +3,8 @@ const fs = require('fs')
 const path = require('path')
 const sequelizeNoUpdateAttributes = require('sequelize-noupdate-attributes')
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('juiceshop', 'admin', 'C1g1ta!2019', {
-    host: 'juiceshop.ckkazoopx6gq.us-east-2.rds.amazonaws.com',
+const sequelize = new Sequelize('dbname', 'username', 'password', {
+    host: '***.****.us-east-2.rds.amazonaws.com',
     port: 5432,
     logging: console.log,
     maxConcurrentQueries: 100,
